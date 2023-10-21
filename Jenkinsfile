@@ -12,7 +12,7 @@ pipeline {
       }
       steps {
        shell '''
-         ls -la
+         cat README.md
        '''
       }
     }
