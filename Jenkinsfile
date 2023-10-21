@@ -6,5 +6,23 @@ pipeline {
        echo "Repository: jenkins1"
       }
     }
+    stage('BR branches') {
+      when {
+        branch "br-*"
+      }
+      steps {
+       ssh '''
+         cat README.md
+       '''
+      }
+    }
+    stage('Pull Requests') {
+      when {
+        branch "PR-*"
+      }
+      steps {
+       echo 'Pull Request started!'
+      }
+    }
   }
 }
