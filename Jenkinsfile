@@ -11,9 +11,7 @@ pipeline {
         branch "br-*"
       }
       steps {
-       sh '''
-         cat README.md
-       '''
+       echo 'Branch checked!'
       }
     }
     stage('Pull Requests') {
