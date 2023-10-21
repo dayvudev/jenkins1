@@ -11,7 +11,7 @@ pipeline {
         branch "br-*"
       }
       steps {
-       sh '''
+       shell '''
          ls -la
        '''
       }
