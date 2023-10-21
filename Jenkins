@@ -1,5 +1,5 @@
 pipeline {
-  agent {label "linux"}
+  agent {label "jenkins-custom-node"}
   stages {
     stage('Repository Info') {
       steps {
