@@ -11,7 +11,7 @@ pipeline {
         branch "br-*"
       }
       steps {
-       ssh '''
+       sh '''
          cat README.md
        '''
       }
